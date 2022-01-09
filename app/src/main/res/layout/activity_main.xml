@@ -1,184 +1,89 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:padding="20dp">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="294dp"
-        android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="Прага"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="Вена"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="Лондон"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="Берлин"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:text="Москва"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </LinearLayout>
+            android:text="Пожалуйста, выберите понравившееся направление."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
 
         <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:orientation="vertical">
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="30dp">
-            </RadioButton>
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Прага" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="30dp">
-            </RadioButton>
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Вена" />
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Берлин" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="30dp">
-            </RadioButton>
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Лондон" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="30dp">
-            </RadioButton>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="30dp">
-            </RadioButton>
-
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Вы в Москве"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
         </RadioGroup>
-        <Button
-            android:id="@+id/btnMap"
-            android:layout_width="314dp"
-            android:layout_height="129dp"
-            android:background="@android:color/transparent"
-            android:text="1.Лондон"
-            android:textColor="@color/black"
-            android:textSize="28dp"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.164"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <Button
-            android:id="@+id/btnMap2"
-            android:layout_width="314dp"
-            android:layout_height="129dp"
-            android:background="@android:color/transparent"
-            android:text="2.Вена"
-            android:textColor="@color/black"
-            android:textSize="28dp"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.164"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.234" />
-
-        <Button
-            android:id="@+id/btnMap3"
-            android:layout_width="314dp"
-            android:layout_height="129dp"
-            android:background="@android:color/transparent"
-            android:text="3.Прага"
-            android:textColor="@color/black"
-            android:textSize="28dp"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.164"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.478" />
-
-        <Button
-            android:id="@+id/btnMap4"
-            android:layout_width="314dp"
-            android:layout_height="129dp"
-            android:background="@android:color/transparent"
-            android:text="4.Москва"
-            android:textColor="@color/black"
-            android:textSize="28dp"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.164"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.749" />
-
-        <Button
-            android:id="@+id/btnMap5"
-            android:layout_width="314dp"
-            android:layout_height="129dp"
-            android:background="@android:color/transparent"
-            android:text="5.Берлин"
-            android:textColor="@color/black"
-            android:textSize="28dp"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.164"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
 
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup"
+            android:orientation="horizontal">
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/clearBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="onClear"
+                android:text="Продолжить" />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:onClick="onSubmit"
+                android:text="ОК" />
+
+        </RelativeLayout>
 
 
-</LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

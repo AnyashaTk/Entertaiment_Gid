@@ -98,19 +98,84 @@
         </RadioGroup>
         <Button
             android:id="@+id/btnMap"
-            android:layout_width="397dp"
-            android:layout_height="86dp"
+            android:layout_width="314dp"
+            android:layout_height="129dp"
             android:background="@android:color/transparent"
-            android:text="1.Красная площадь"
+            android:text="1.Лондон"
             android:textColor="@color/black"
             android:textSize="28dp"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintHorizontal_bias="0.164"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.025" />
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnMap2"
+            android:layout_width="314dp"
+            android:layout_height="129dp"
+            android:background="@android:color/transparent"
+            android:text="2.Вена"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.234" />
+
+        <Button
+            android:id="@+id/btnMap3"
+            android:layout_width="314dp"
+            android:layout_height="129dp"
+            android:background="@android:color/transparent"
+            android:text="3.Прага"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.478" />
+
+        <Button
+            android:id="@+id/btnMap4"
+            android:layout_width="314dp"
+            android:layout_height="129dp"
+            android:background="@android:color/transparent"
+            android:text="4.Москва"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.749" />
+
+        <Button
+            android:id="@+id/btnMap5"
+            android:layout_width="314dp"
+            android:layout_height="129dp"
+            android:background="@android:color/transparent"
+            android:text="5.Берлин"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
 
 
     </LinearLayout>

@@ -96,6 +96,21 @@
             </RadioButton>
 
         </RadioGroup>
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="397dp"
+            android:layout_height="86dp"
+            android:background="@android:color/transparent"
+            android:text="1.Красная площадь"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025" />
 
 
     </LinearLayout>
